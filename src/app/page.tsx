@@ -22,11 +22,11 @@ export default function Home() {
       <section className="mt-11 w-screen">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-[30px] font-bold">Diving in to the world of Data fetching</h1>
-           <div className="bg-indigo-200 text-black w-[450px] h-[300px] flex justify-center items-center flex-col">
+           <div className="bg-indigo-200 text-black w-[450px] h-[300px] flex justify-center items-center flex-col rounded-md">
              <h3 className="font-bold text-[24px]">Explore</h3>
              <p className="text-[20px]">Explore server side and client side rendering</p>
              <span className="flex gap-1 flex-col">
-             <Link href={"/"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Server side rendering</Link>
+             <Link href={"/serverSideRender"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Server side rendering</Link>
              <Link href={"/"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Client side rendering</Link>
              </span>
            </div>
