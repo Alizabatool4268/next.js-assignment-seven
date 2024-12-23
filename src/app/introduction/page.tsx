@@ -12,7 +12,7 @@ function Page() {
                 <li className='list-disc'>Data is fetched before the page loads, during the server rendering process.</li>
                 <li className='list-disc'>Hence, it provides Better SEO as content is present in initial HTML.</li>
                 <li className='list-disc'>server side data fetching allows faster initial page load.</li>
-                <li className='list-disc'>It is good for static data that doesn't change often.</li>
+                <li className='list-disc'>It is good for static data that doesn&apos;t change often.</li>
             </ul>
         </div>
         <div className='w-[300px]'>
