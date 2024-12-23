@@ -26,8 +26,8 @@ export default function Home() {
              <h3 className="font-bold text-[24px]">Explore</h3>
              <p className="text-[20px]">Explore server side and client side rendering</p>
              <span className="flex gap-1 flex-col">
-             <Link href={"/serverSideRender"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Server side rendering</Link>
-             <Link href={"/"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Client side rendering</Link>
+             <Link href={"/serverSideFetch"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Server side rendering</Link>
+             <Link href={"/ClientSideFetch"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Client side rendering</Link>
              </span>
            </div>
         </div>

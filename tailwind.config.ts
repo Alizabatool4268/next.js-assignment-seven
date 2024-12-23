@@ -18,7 +18,7 @@ export default {
         "msm":{"min":"460px", "max":"639px"},
         "sm":{"min":"640px", "max":"767px"},
         "md":{"min":"768px","max":"1023px"}
-    }
+    },
     },
   },
   plugins: [],
