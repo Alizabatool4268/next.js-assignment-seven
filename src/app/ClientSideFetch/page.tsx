@@ -32,6 +32,7 @@ function Page() {
       }
       catch(error){
         console.log(error)
+        return( <p>product is not found</p>)
       }
       setLoading(false)
     }
@@ -42,16 +43,16 @@ function Page() {
   }
   return (
     <section>
-      <div className='grid grid-cols-3 grid-rows-7 gap-3'>
+      <div className='grid grid-cols-3 grid-rows-7 gap-3 xsm:grid-cols-1 xsm:grid-rows-12 ssm:grid-cols-1 ssm:grid-rows-12 msm:grid-cols-2 msm:grid-rows-9 sm:grid-cols-2 sm:grid-rows-9'>
         {Data.map((productdetail)=>(
          
         <div className='flex justify-center items-center' key={productdetail.id}>
           <div className='w-[300px] shadow-lg flex flex-col justify-center items-center gap-1'>
             <Image height={120} width={120} src={productdetail.image} alt={productdetail.title}></Image>
             <h1 className='font-bold text-blue-900'>{productdetail.title}</h1>
-            <span className='flex justify-between items-center'>
+            <span className='flex justify-between items-center gap-8'>
               <p className='flex'><IoIosStar className='text-yellow-500'/>{productdetail.rating.rate} </p>
-              <p className='text-purple-500 mr-8'>{productdetail.rating.count} left</p>
+              <p className='text-purple-500 '>{productdetail.rating.count} left</p>
             </span>
             <p className='text-pink-500 font-bold'>{productdetail.category}</p>
             <p>{`${productdetail.description.slice(0,100)}...`}</p>

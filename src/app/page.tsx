@@ -6,28 +6,28 @@ export default function Home() {
     <main className="w-screen">
       <section className="mt-11 w-screen">
          <h1 className="text-center font-bold text-[28px]">Assignment seven</h1>
-        <div className="flex justify-evenly items-center">
-         <div className="w-[400px] flex flex-col items-center ">
-          <h2 className="font-bold text-[26px] text-blue-900">Introduction</h2>
-          <ul className="text-center">
+        <div className="flex justify-evenly items-center msm:flex-col ssm:flex-col xsm:flex-col">
+         <div className="w-[400px] flex flex-col items-center ssm:w-[360px] xsm:w-[280px] ">
+           <h2 className="font-bold text-[26px] text-blue-900">Introduction</h2>
+           <ul className="text-center ssm:text-sm xsm:text-sm">
             <li> This assignment is based on the concept of server side and client side data fetching. </li>
             <li>Each way has its pros and cons. This assignment portraites both the concepts in a simplified manner</li>
             <li>Both the ways are equally important. Read more to find out the minor differences between server and client side data fetching </li>      
-          </ul>
-          <Link href={"/"} className="h-[40px] w-[100px] mt-2 bg-blue-900 text-white flex justify-center items-center rounded-md">Know more</Link>
+           </ul>
+           <Link href={"/introduction"} className="h-[40px] w-[100px] mt-2 bg-blue-900 text-white flex justify-center items-center rounded-md">Know more</Link>
          </div>
-         <Image height={400} width={400} src={"/Images/contact-page-img.png"} alt="heroImage"></Image>
+          <Image height={400} width={400} src={"/Images/contact-page-img.png"} alt="heroImage"></Image>
         </div>  
       </section>
       <section className="mt-11 w-screen">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-[30px] font-bold">Diving in to the world of Data fetching</h1>
-           <div className="bg-indigo-200 text-black w-[450px] h-[300px] flex justify-center items-center flex-col rounded-md">
+           <div className="bg-indigo-200 text-black w-[450px] h-[300px] flex justify-center items-center flex-col rounded-md ssm:w-[360px] xsm:w-[290px]">
              <h3 className="font-bold text-[24px]">Explore</h3>
              <p className="text-[20px]">Explore server side and client side rendering</p>
              <span className="flex gap-1 flex-col">
-             <Link href={"/serverSideFetch"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Server side rendering</Link>
-             <Link href={"/ClientSideFetch"} className="bg-black text-white h-[40px] w-[320px] rounded-sm flex justify-center items-center">Client side rendering</Link>
+             <Link href={"/serverSideFetch"} className="bg-black text-white h-[40px] w-[320px] xsm:w-[280px] rounded-sm flex justify-center items-center">Server side fetching</Link>
+             <Link href={"/ClientSideFetch"} className="bg-black text-white h-[40px] w-[320px] xsm:w-[280px]  rounded-sm flex justify-center items-center">Client side fetching</Link>
              </span>
            </div>
         </div>
